@@ -1,0 +1,142 @@
+@import "./variables";
+@import "./reset";
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;300;400;500;600;700;800;900&family=Lexend+Deca&display=swap');
+@mixin mobile {
+    @media(max-width: $mobile) {
+        @content;
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100vh;
+    background-color: $lightGrey;
+    font-family: 'Lexend Deca', sans-serif;
+    @include mobile {
+        padding: 20px;
+        width: 100vw;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+    
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3,310px);
+        border-radius: 12px;
+        overflow: hidden;
+
+        @include mobile {
+            width: 100%;
+            grid-template-columns: auto;
+        }
+
+        .icon{
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-family: 'Big Shoulders Display', cursive;
+            text-transform: uppercase;
+            color: $lightGrey;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .category{
+            padding: 50px;
+            p {
+               
+                font-size: 15px;
+                font-weight: 400;
+                color: $transparentWhite;
+                line-height: 1.7em;
+            }
+
+            button {
+                text-transform: capitalize;
+                display: grid;
+                place-items: center;
+                border: none;
+                outline: none;
+                border-radius: 50px;
+                font-size: 15px;
+                font-weight: 400;
+                background-color: $lightGrey;
+                padding: 12px 20px;
+                margin-top: 100px;
+
+               
+            }
+
+        }
+
+        #sedan{
+            grid-column: 1/2;
+            background-color: $brightOrange;
+            button {
+                color: $brightOrange;
+                &:active {
+                    border:2px solid $lightGrey;
+                    color: $lightGrey;
+                    background-color: transparent;
+                    cursor: pointer;
+                }
+            }
+            @include mobile {
+                grid-column: 1/2;
+                grid-row: 1/2;
+            }
+        }
+
+        #suv{
+            grid-column: 2/3;
+            background-color: $darkCyan;
+            button {
+                color: $darkCyan;
+                &:active {
+                    border:2px solid $lightGrey;
+                    color: $lightGrey;
+                    background-color: transparent;
+                    cursor: pointer;
+                }
+            }
+            @include mobile {
+                grid-column: 1/2;
+                grid-row: 2/3;
+            }
+        }
+
+        #luxury{
+            grid-column: 3/4;
+            background-color: $darkerCyan;
+            button {
+                color: $darkerCyan;
+                &:active {
+                    border:2px solid $lightGrey;
+                    color: $lightGrey;
+                    background-color: transparent;
+                    cursor: pointer;
+                }
+            }
+            @include mobile {
+                grid-column: 1/2;
+                grid-row: 3/4;
+            }
+        }
+    }
+
+    .attribution {
+        @include mobile {
+           text-align: center;
+        }
+    }
+}
+

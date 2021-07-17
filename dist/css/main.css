@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;300;400;500;600;700;800;900&family=Lexend+Deca&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  height: 100vh;
+  background-color: #f2f2f2;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+@media (max-width: 376px) {
+  body {
+    padding: 20px;
+    width: 100vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow-y: scroll;
+  }
+}
+
+body .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (310px)[3];
+      grid-template-columns: repeat(3, 310px);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+@media (max-width: 376px) {
+  body .container {
+    width: 100%;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+}
+
+body .container .icon {
+  margin-bottom: 30px;
+}
+
+body .container h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  text-transform: uppercase;
+  color: #f2f2f2;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+body .container .category {
+  padding: 50px;
+}
+
+body .container .category p {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.7em;
+}
+
+body .container .category button {
+  text-transform: capitalize;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: #f2f2f2;
+  padding: 12px 20px;
+  margin-top: 100px;
+}
+
+body .container #sedan {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  background-color: #e38826;
+}
+
+body .container #sedan button {
+  color: #e38826;
+}
+
+body .container #sedan button:active {
+  border: 2px solid #f2f2f2;
+  color: #f2f2f2;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media (max-width: 376px) {
+  body .container #sedan {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+}
+
+body .container #suv {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  background-color: #006970;
+}
+
+body .container #suv button {
+  color: #006970;
+}
+
+body .container #suv button:active {
+  border: 2px solid #f2f2f2;
+  color: #f2f2f2;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media (max-width: 376px) {
+  body .container #suv {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+}
+
+body .container #luxury {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  background-color: #004241;
+}
+
+body .container #luxury button {
+  color: #004241;
+}
+
+body .container #luxury button:active {
+  border: 2px solid #f2f2f2;
+  color: #f2f2f2;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media (max-width: 376px) {
+  body .container #luxury {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+  }
+}
+
+@media (max-width: 376px) {
+  body .attribution {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=main.css.map */
