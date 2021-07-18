@@ -26,7 +26,7 @@ body {
   font-family: 'Lexend Deca', sans-serif;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 420px) {
   body {
     padding: 20px;
     width: 100vw;
@@ -56,7 +56,7 @@ body .container {
   overflow: hidden;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 420px) {
   body .container {
     width: 100%;
     -ms-grid-columns: auto;
@@ -120,7 +120,7 @@ body .container #sedan button:active {
   cursor: pointer;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 420px) {
   body .container #sedan {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
@@ -149,7 +149,7 @@ body .container #suv button:active {
   cursor: pointer;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 420px) {
   body .container #suv {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
@@ -178,7 +178,7 @@ body .container #luxury button:active {
   cursor: pointer;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 420px) {
   body .container #luxury {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
@@ -189,7 +189,7 @@ body .container #luxury button:active {
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 420px) {
   body .attribution {
     text-align: center;
   }
